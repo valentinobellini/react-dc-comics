@@ -1,9 +1,11 @@
 /* reset */
 * {
   margin: 0;
-  padding: ;
+  padding: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
+  list-style: none;
+
 }
 
 
@@ -11,7 +13,7 @@
 
 /* header section style */
 header {
-  height: 150px;
+  height: 130px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -22,7 +24,6 @@ header nav ul {
   justify-content: center;
   align-items: center;
   column-gap: 20px;
-  list-style: none;
 }
 
 header nav ul li a {
@@ -46,7 +47,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 150px;
   width: 100%;
 }
 
@@ -82,4 +83,77 @@ main {
 
 .service img {
   width: 35px;
+}
+
+
+
+/* footer style */
+
+/* upper section */
+.links-wrapper {
+  width: 70%;
+
+  /* flex blocco links */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  column-gap: 40px;
+}
+
+/* footer style */
+.footer-links {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  /* height: 482px; */
+  padding: 50px;
+  background-image: url(/img/footer-bg.jpg);
+}
+
+.footer-links div {
+  font-size: 20px;
+  color: white;
+
+}
+
+.footer-links div ul li a {
+  font-size: 13px;
+  color: gray;
+  text-decoration: none;
+}
+
+
+/* lower section */
+.footer-low {
+  height: 150px;
+  /* width: 70%; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(59, 59, 59);
+  /* padding: 100px; */
+}
+
+.signup-button {
+  font-size: 25px;
+  color: white;
+  border: 2px solid rgb(2, 130, 249);
+  background-color: rgb(59, 59, 59);
+  padding: 15px;
+}
+
+.social-media> :where(span, a) {
+  margin-right: 25px;
+}
+
+.social-media span {
+  color: rgb(2, 130, 249);
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.social-media a {
+  color: white;
 }
