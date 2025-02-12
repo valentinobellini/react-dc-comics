@@ -13,7 +13,7 @@
 
 /* header section style */
 header {
-  height: 130px;
+  height: 150px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -47,7 +47,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150px;
+  height: 180px;
   width: 100%;
 }
 
