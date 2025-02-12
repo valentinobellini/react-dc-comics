@@ -1,7 +1,7 @@
 // crea componente header.jsx
 export default function Footer() {
-    return (<footer className="footer">
-        <div className="footer-wrapper">
+    return (
+        <footer className="footer">
             <div className="footer-links">
                 <div className="links-wrapper">
                     <div>
@@ -66,6 +66,5 @@ export default function Footer() {
                     <a href="#"><img src="/img/footer-periscope.png" alt="Pinterest" /></a>
                 </div>
             </div>
-        </div>
-    </footer>);
+        </footer>);
 };
