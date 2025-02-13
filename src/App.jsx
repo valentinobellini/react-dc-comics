@@ -21,11 +21,61 @@ function App() {
     { id: 10, name: "SHOP", url: "#", current: false }
   ];
 
+  // array oggetti footerLinks
+  const footerLinksData = [
+    {
+      sectionTitle: "DC COMICS",
+      links: [
+        { name: "Characters", url: "#" },
+        { name: "Comics", url: "#" },
+        { name: "Movies", url: "#" },
+        { name: "TV", url: "#" },
+        { name: "Games", url: "#" },
+        { name: "Videos", url: "#" },
+        { name: "News", url: "#" }
+      ]
+    },
+    {
+      sectionTitle: "SHOP",
+      links: [
+        { name: "Shop DC", url: "#" },
+        { name: "Shop DC Collectibles", url: "#" }
+      ]
+    },
+    {
+      sectionTitle: "DC",
+      links: [
+        { name: "Terms of Use", url: "#" },
+        { name: "Privacy Policy", url: "#" },
+        { name: "Ad Choices", url: "#" },
+        { name: "Advertising", url: "#" },
+        { name: "Jobs", url: "#" },
+        { name: "Subscriptions", url: "#" },
+        { name: "Talent Workshop", url: "#" },
+        { name: "CPSC Certificates", url: "#" },
+        { name: "Ratings", url: "#" },
+        { name: "Shop Help", url: "#" },
+        { name: "Contact Us", url: "#" }
+      ]
+    },
+    {
+      sectionTitle: "SITES",
+      links: [
+        { name: "DC", url: "#" },
+        { name: "MAD Magazine", url: "#" },
+        { name: "DC Kids", url: "#" },
+        { name: "DC Universe", url: "#" },
+        { name: "DC Power Visa", url: "#" }
+      ]
+    }
+  ];
+
+
   return (
     <>
       <Header navLinks={navLinksData} />
       <Main />
-      <Footer />
+      <Footer footerLinks={footerLinksData} />
 
     </>
   )

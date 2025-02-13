@@ -1,10 +1,25 @@
 // crea componente header.jsx
-export default function Footer() {
+export default function Footer(props) {
     return (
         <footer className="footer">
             <div className="footer-links">
                 <div className="links-wrapper">
-                    <div>
+
+
+                    {props.footerLinks.map((section, index) => (
+                        <div key={index}>
+                            <h4>{section.sectionTitle}</h4>
+                            <ul>
+                                {section.links.map((link, linkIndex) => (
+                                    <li key={linkIndex}>
+                                        <a href={link.url}>{link.name}</a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    ))}
+
+                    {/* <div>
                         <h4>DC COMICS</h4>
                         <ul>
                             <li><a href="#">Characters</a></li>
@@ -49,9 +64,15 @@ export default function Footer() {
                             <li><a href="#">DC Universe</a></li>
                             <li><a href="#">DC Power Visa</a></li>
                         </ul>
-                    </div>
-                </div>
+                    </div> */}
 
+
+
+
+
+
+
+                </div>
                 <div>
                     <div className="big-logo">
                         <img src="/img/dc-logo-bg.png" alt="logo" />
