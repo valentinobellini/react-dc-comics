@@ -1,17 +1,28 @@
+// crea array oggetti navLinks
+const navLinks = [
+    { id: 1, name: "CHARACTERS", url: "#", current: false },
+    { id: 2, name: "COMICS", url: "#", current: false },
+    { id: 3, name: "MOVIES", url: "#", current: true },
+    { id: 4, name: "TV", url: "#", current: false },
+    { id: 5, name: "GAMES", url: "#", current: false },
+    { id: 6, name: "COLLECTIBLES", url: "#", current: false },
+    { id: 7, name: "VIDEOS", url: "#", current: false },
+    { id: 8, name: "FANS", url: "#", current: false },
+    { id: 9, name: "NEWS", url: "#", current: false },
+    { id: 10, name: "SHOP", url: "#", current: false }
+];
+
+
 export default function NavBar() {
     return (
         <ul>
-            <li><a href="#">CHARACTERS</a></li>
-            <li><a href="#">COMICS</a></li>
-            <li><a href="#">MOVIES</a></li>
-            <li><a href="#">TV</a></li>
-            <li><a href="#">GAMES</a></li>
-            <li><a href="#">COLLECTIBLES</a></li>
-            <li><a href="#">VIDEOS</a></li>
-            <li><a href="#">FANS</a></li>
-            <li><a href="#">NEWS</a></li>
-            <li><a href="#">SHOP</a></li>
-
+            {navLinks.map((link) => (
+                <li key={link.id}>
+                    <a href={link.url}>
+                        {link.name}
+                    </a>
+                </li>
+            ))}
         </ul>
     );
 };
