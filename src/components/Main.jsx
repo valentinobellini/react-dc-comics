@@ -1,5 +1,5 @@
 // importa componenti
-import ServicesBanner from "./banners/ServicesBanner";
+import ServicesBanner from "./ServicesBanner";
 
 
 // crea componente main.jsx
