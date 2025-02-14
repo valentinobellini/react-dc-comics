@@ -1,8 +1,10 @@
 export default function Card(props) {
     return (
         <div className='card'>
-            <img src={props.thumb} alt={props.title} className="card-img" />
-            <h3 className="card-title">{props.title}</h3>
+            <div className="img-container">
+                <img src={props.thumb} alt={props.title} className="card-img" />
+            </div>
+            <h3 className="card-title">{props.title.toUpperCase()}</h3>
         </div>
     );
 };
