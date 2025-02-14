@@ -63,7 +63,47 @@ main {
   align-items: center;
 }
 
-.content-wrapper,
+
+
+/* card list style */
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.card-list {
+  width: 70%;
+}
+
+.card-list-title {
+  color: white;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* single card style */
+
+.card {
+  width: 100px;
+  height: 150px;
+}
+
+.card-img {
+  max-width: 100px;
+}
+
+
+
+
+
+
+
 .services-wrapper {
   display: flex;
   justify-content: center;

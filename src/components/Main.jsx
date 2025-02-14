@@ -1,14 +1,12 @@
 // importa componenti
 import ServicesBanner from "./ServicesBanner";
-
+import CardList from "./main_components/CardList";
 
 // crea componente main.jsx
 export default function Main() {
     return (<main className="main-content">
         <div className="content-wrapper">
-            <section className="content">
-                <h2> Content goes here </h2>
-            </section>
+            <CardList />
         </div>
         <ServicesBanner />
     </main>
